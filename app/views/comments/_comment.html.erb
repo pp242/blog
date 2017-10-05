@@ -1,0 +1,14 @@
+<p> user name - <em><%=comment.username%></em></p>
+
+<h2>Title: <%= comment.title %> </h2>
+
+<h3>Body: <%= comment.body %></h3>
+
+<%= link_to "Show Page", post_comment_path(@post,comment) unless controller_name == "comments"%>
+
+<%= link_to "Edit", edit_post_comment_path(@post, comment) if controller_name == "comments" %>
+<br>
+-----------------------------------
+<br>
+
+

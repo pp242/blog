@@ -1,0 +1,8 @@
+<h1>All Posts comments</h1>
+
+
+<%= render @post.comments %>
+
+<%= link_to "New comment", new_post_comment_path %>
+
+<%= link_to "Back", post_path(@post) %>

@@ -1,0 +1,10 @@
+<h1>Comment show Page</h1>
+
+
+
+
+
+<%= render @comment %>
+
+<%= link_to "Back", post_path(@post) %>
+<%= link_to "Delete", post_comment_path, method: :delete, data: { confirm: "Are you sure?" } %>
